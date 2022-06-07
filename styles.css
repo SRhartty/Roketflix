@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(45deg, #1E46A3, #000000, #C12A23);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    min-height: 100vh;
+}
+
+body button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+
+    background: #E9E6E3;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #1A1A1A;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+body button img {
+    width: 15px;
+    padding: 0px 5px 0px 5px;
+}
+
+.logo img {
+    width: 6vw;
+}
+
+.assistir h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+
+    color: #FFFCF9;
+}
+
+.conteudo {
+    display: flex;
+    align-content: space-around;
+    align-items: flex-start;
+    width: 50vw;
+    gap: 4vw;
+    max-width: 1920px;
+}
+
+.poster img {
+    width: 15vw;
+    max-width: 400px;
+}
+
+.texto h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #FFFCF9;
+}
+
+.texto p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFCF9;
+
+}
+
+.final {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFCF9;
+    width: 35vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 20vw;
+        padding-top: 4vh;
+    }
+
+    .assistir h1 {
+        text-align: center;
+
+    }
+
+    .conteudo {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80vw;
+        align-items: center;
+    }
+
+    .poster img{
+        width: 45vw;
+    }
+
+    body button{
+        width: 50vw;
+        font-size: 20px;
+    }
+
+    .final{
+        width: 70vw;
+    }
+}

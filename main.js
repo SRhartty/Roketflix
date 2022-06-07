@@ -7,16 +7,30 @@ function random() {
 }
 
 const filme = (random())
-var url = BASE_URL + filme +'?api_key='+ API_KEY
+var url = BASE_URL + filme +'?api_key='+ API_KEY + '&' + language
 
 function getFilme() {
   axios.get(url)
     .then(response => {
       const data = response.data
-      teste.textContent = JSON.stringify(data)
+      data.textContent = JSON.stringify(data)
+      console.log(response)
+
+      title.textContent = data.original_title
+      descricao.textContent = data.overview
+      poster.src = IMG_URL + data.poster_path
 
     })
-    .catch(error => console.log(error))
+    .catch(error => location.reload(getFilme))
 }
 
+
 console.log(getFilme())
+
+var btn = document.querySelector("#reload");
+btn.addEventListener("click", function() {
+    
+    location.reload(getFilme);
+});
+
+
