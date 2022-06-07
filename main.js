@@ -1,7 +1,7 @@
 import { API_KEY, BASE_URL, IMG_URL, language, } from './api.js'
 
 function random() {
-  var random = Math.random() * 5000;
+  var random = Math.random() * 10000;
   return Math.round(random);
 
 }
