@@ -16,10 +16,11 @@ function getFilme() {
       data.textContent = JSON.stringify(data)
       console.log(response)
 
-      title.textContent = data.original_title
+
+      title.textContent = data.title
       descricao.textContent = data.overview
       poster.src = IMG_URL + data.poster_path
-
+      
     })
     .catch(error => location.reload(getFilme))
 }
@@ -32,5 +33,7 @@ btn.addEventListener("click", function() {
     
     location.reload(getFilme);
 });
+
+
 
 
